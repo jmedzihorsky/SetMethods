@@ -8,7 +8,7 @@
   \item{y}{is a vector containing the values of the output.}
   \item{cond.lab}{is a vector containing the label(s) of the condition(s).}
   \item{necessity}{logical. It indicates if the output should be for sufficient or necessary condition(s). By default, \code{TRUE}, the function returns a table of parameters of fit for sufficient condition(s) (Consistency, Coverage, PRI and Product). When it set to \code{FALSE} the function returns a table of parameters of fit for necessary condition(s) (Consistency, Coverage, Relevance of Necessity).}
-  \item{negation}{logical. It indicates if the parameters of fit should be computed for the positive or the negative outcome. By default it is set to be \code{FALSE}, so it returns parameters of fit for the positive outcome.}
+  \item{negation}{logical. It indicates if the parameters of fit should be computed for the positive or the negative outcome. By default, \code{FALSE}, the function returns parameters of fit for the positive outcome.}
 }
 %\details{}
 \value{It returns a matrix containing the parameters of fit for each condition.}
