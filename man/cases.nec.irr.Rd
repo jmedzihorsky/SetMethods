@@ -36,4 +36,5 @@ cases.nec.irr(results, outcome, solution = 1)
 	\code{\link[QCA:eqmcc]{eqmcc}}
 }
 \examples{
-\keyword{ QCA }
+}
+\keyword{QCA}

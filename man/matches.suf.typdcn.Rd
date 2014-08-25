@@ -41,5 +41,5 @@ matches.suf.typdcn(results, outcome, solution = 1, term = NULL, max_pairs = 5)
 \seealso{
 	\code{\link[QCA:eqmcc]{eqmcc}}
 }
-\examples{
-\keyword{ QCA }
+\examples{}
+\keyword{QCA}

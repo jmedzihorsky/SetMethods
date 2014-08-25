@@ -38,5 +38,5 @@ matches.suf.dcvirr(results, outcome, solution = 1, max_pairs = 5)
 \seealso{
 	\code{\link[QCA:eqmcc]{eqmcc}}
 }
-\examples{
-\keyword{ QCA }
+\examples{}
+\keyword{QCA}

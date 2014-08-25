@@ -45,4 +45,4 @@ pimdata(results, outcome, solution = 1)
 ##-- ==>  Define data, use random,
 ##--	or do  help(data=index)  for the standard data sets.
 }
-\keyword{ QCA }
+\keyword{QCA}

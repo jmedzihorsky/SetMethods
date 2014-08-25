@@ -42,4 +42,5 @@ matches.suf.typtyp(results, outcome, solution = 1, term = NULL, max_pairs = 5)
 	\code{\link[QCA:eqmcc]{eqmcc}}
 }
 \examples{
-\keyword{ QCA }
+}
+\keyword{QCA}

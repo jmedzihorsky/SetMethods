@@ -35,5 +35,5 @@ cases.suf.typ(results, outcome, solution = 1)
 \seealso{
 	\code{\link[QCA:eqmcc]{eqmcc}}
 }
-\examples{
-\keyword{ QCA }
+\examples{}
+\keyword{QCA}
