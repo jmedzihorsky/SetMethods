@@ -9,7 +9,6 @@ function(x, y, cond.lab = NULL, necessity = FALSE, negation = FALSE){
 	
 	if(negation == TRUE){
 		y <- 1 - y
-		cond.lab <- paste("~", cond.lab, sep = "")
 		} 
 	
 	for(i in 1:length(x[1,])){
@@ -42,10 +41,10 @@ function(x, y, cond.lab = NULL, necessity = FALSE, negation = FALSE){
 	storage.mode(nec) <- "numeric" 	
 	
 	if(necessity == FALSE){
-        return(structure(suf, class = "SetMethod"))
+        return(suf)
 		} 
 	else{
-        return(structure(nec, class = "SetMethod"))
+        return(nec)
 		}
 
 }
