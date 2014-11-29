@@ -9,7 +9,7 @@ You can install it using `devtools`
 
 `library(devtools)`
 
-`install_github("SetMethods", username="jmedzihorsky")`
+`install_github("jmedzihorsky/SetMethods")`
 
 
 ## Stable version
