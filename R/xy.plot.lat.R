@@ -19,21 +19,27 @@ function(x, y,
     # Necessity
 	con <- sum(pmin(x, y))/sum(y)
 	cov <- sum(pmin(x, y))/sum(x)
+	ron <- sum(1-x)/sum(1-pmin(x, y))
 	cons <- format(con, digits = 3)
 	storage.mode(cons) <- "numeric"
 	cove <- format(cov, digits = 3)
 	storage.mode(cove) <- "numeric"
-    pof <- sprintf("Consistency Necessary Cond.: %.3f - Coverage Necessary Cond.: %.3f", con, cov)
+	rons <- format(ron, digits = 3)
+      	storage.mode(rons) <- "numeric"
+    pof <- sprintf("Consistency Necessity: %.3f; Coverage Necessity: %.3f; Relevance Necessity: %.3f", con, cov, ron)
 	}
 	else{
 	# Sufficiency
 	con <- sum(pmin(x, y))/sum(x)
 	cov <- sum(pmin(x, y))/sum(y)
+	pri <- (sum(pmin(x,y))-sum(pmin(x,y,1-y)))/(sum(x)-sum(pmin(x,y,1-y)))
 	cons <- format(con, digits = 3)
 	storage.mode(cons) <- "numeric"
 	cove <- format(cov, digits = 3)
 	storage.mode(cove) <- "numeric"
-    pof <- sprintf("Consistency Sufficient Cond.: %.3f - Coverage Sufficient Cond.: %.3f", con, cov)
+	pris <- format(pri, digits = 3)
+        storage.mode(pris) <- "numeric"
+    pof <- sprintf("Consistency Sufficiency: %.3f; Coverage Sufficiency: %.3f; PRI: %.3f", con, cov, pri)
 	}
 
     
