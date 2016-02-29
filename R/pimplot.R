@@ -1,12 +1,13 @@
 pimplot <-
 function(results,
-		 outcome,
+		 outcome, 
+		 intermed=FALSE,
 		 solution=1,			
 		 case_labels=TRUE,
 		 lab_color=rgb(0,0,0,0.5),
 		 lab_jitter=FALSE)
 {
-	P <- pimdata(results=results, outcome=outcome, solution=solution)
+	P <- pimdata(results=results, outcome=outcome, intermed=intermed, solution=solution)
 	n_c <- ncol(P)-1
 	par(ask=T)
 	aux.plot <-
