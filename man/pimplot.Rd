@@ -7,7 +7,7 @@
 	Plot prime implicant plots from an object of class "qca".  
 }
 \usage{
-pimdata(results, outcome, solution = 1)
+pimdata(results, outcome, intermed=FALSE, solution = 1)
 }
 \arguments{
 	\item{results}{
@@ -15,6 +15,9 @@ pimdata(results, outcome, solution = 1)
 	}
 	\item{outcome}{
 		A character string with the name of the outcome.
+	}
+	\item{intermed}{
+		Logical. Use the intermediate solution?
 	}
 	\item{solution}{
 		A numeric vector where the first number indicates the number of the
